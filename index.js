@@ -359,7 +359,7 @@ async function run() {
       const result = await blogCollection.updateOne(query, updateDoc);
       res.send(result);
     });
-    // Update donation request status
+    // Update donation status
     app.patch("/donationRequest/:id", verifyToken, async (req, res) => {
       const id = req.params.id;
 
