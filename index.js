@@ -24,7 +24,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-// Email sending function
+// Email sending
 const sendEmail = (email, emailData) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
