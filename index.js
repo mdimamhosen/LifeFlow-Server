@@ -347,7 +347,7 @@ async function run() {
       const result = await blogCollection.updateOne(query, updateDoc);
       res.send(result);
     });
-    // update blog data
+    // update blog
     app.patch("/blogs/:id", verifyToken, async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
