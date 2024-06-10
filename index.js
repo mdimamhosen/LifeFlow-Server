@@ -491,7 +491,7 @@ async function run() {
         totalAmount,
         chartData,
       });
-    }); // Admin statistics API for blood donation
+    });
     // Admin statistics API for blood donation
     app.get("/admin-stat-bloodDonation", verifyToken, async (req, res) => {
       try {
