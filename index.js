@@ -89,7 +89,7 @@ async function run() {
       console.log(token);
       res.send({ token });
     });
-    //middleware to verify access token
+    //middleware to verify  token
     const verifyToken = (req, res, next) => {
       const authHeader = req?.headers?.authorization;
 
