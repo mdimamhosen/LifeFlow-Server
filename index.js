@@ -10,7 +10,7 @@ const stripe = require("stripe")(
 );
 
 const port = process.env.PORT || 3001;
-// middleware
+
 // set cors
 const corsOptions = {
   origin: [
