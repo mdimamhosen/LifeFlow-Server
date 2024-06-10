@@ -395,7 +395,7 @@ async function run() {
       const blog = await blogCollection.findOne(query);
       res.send(blog);
     });
-    // get donation request by
+    // get donation request
     app.get("/donors/search", async (req, res) => {
       console.log("searching");
       console.log(req.query);
