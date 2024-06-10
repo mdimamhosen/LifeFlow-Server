@@ -80,7 +80,7 @@ async function run() {
     const blogCollection = client.db("lifeflow").collection("blogs");
     const donate = client.db("lifeflow").collection("donate");
 
-    // auth related api
+    // auth related
     app.post("/jwt", async (req, res) => {
       const user = req.body;
       const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
